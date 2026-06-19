@@ -159,3 +159,4 @@ The project successfully demonstrated the integration of several embedded-system
 2. MPLAB X IDE Documentation.
 3. XC8 Compiler Documentation.
 4. HD44780 LCD Controller Documentation.
+5. Proteus Design Suite Documentation.
