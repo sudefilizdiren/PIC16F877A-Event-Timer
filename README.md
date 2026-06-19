@@ -106,17 +106,23 @@ In addition to the standard timer functionality, the system plays the *Pirates o
 PIC16F877A-Event-Timer/
 │
 ├── README.md
+│
 ├── Source_Code/
 │   └── main.c
 │
 ├── Proteus_Files/
+│   ├── event_timer.pdsprj
+│   └── event_timer_pickitX.production.hex
 │
 ├── Report/
 │   └── Final_Report.pdf
 │
-├── Images/
-│
-└── Documentation/
+└── Images/
+    ├── hardware_setup.jpeg
+    ├── lcd_countdown.jpeg
+    ├── emergency_stop.jpeg
+    ├── group_photo_1.jpeg
+    └── group_photo_2.jpeg
 ```
 
 ---
