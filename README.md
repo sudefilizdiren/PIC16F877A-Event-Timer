@@ -10,15 +10,15 @@ In addition to the standard timer functionality, the system plays the *Pirates o
 
 ## Features
 
-* 4×4 Matrix Keypad Input
-* 16×2 LCD Display Interface
-* Timer1-Based Countdown System
-* PWM Audio Generation Using CCP1 Module
-* Pirates of the Caribbean Melody Alarm
-* Emergency Stop Function Using External Interrupt
-* Emergency Warning Siren
-* Proteus Simulation
-* Real Hardware Implementation
+* **Interactive Time Setup:** Users can input a custom countdown duration up to 9999 seconds using a 4x4 matrix keypad.
+* **Real-Time LCD Interface:** The system provides clear, dynamic feedback on a 16x2 character LCD, displaying the remaining time in a clean `MM:SS` format.
+* **Hardware Interrupt-Driven Precision:** * Utilizes **Timer1** with a 1:8 prescaler to generate precise 100ms interrupts, ensuring the countdown is consistently accurate.
+  * Uses the **External Interrupt (RB0)** pin for the Emergency Stop feature, guaranteeing an instant hardware-level response regardless of the current code execution state.
+* **Advanced PWM Audio Engine:** * Leverages the CCP1 module and Timer2 to generate dynamic hardware PWM signals.
+  * **Time's Up Melody:** Plays the *Pirates of the Caribbean* theme song using arrays of specific note frequencies and durations stored in Flash memory.
+  * **Emergency Siren:** Emits a continuous, dual-tone (1.5 kHz and 2.5 kHz) alarm when the emergency stop is triggered.
+* **Robust Input Handling:** Includes keypad debouncing and wait-for-release logic to prevent multiple rapid inputs from a single button press.
+* **Non-Blocking Delay Logic:** Custom delay functions continually poll the keypad, allowing users to instantly mute alarms or cancel actions without waiting for the audio loop to finish.
 
 ---
 
