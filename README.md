@@ -4,7 +4,7 @@
 
 This project is a programmable event timer designed and implemented using the PIC16F877A microcontroller. The system allows users to enter a countdown duration through a 4×4 matrix keypad and monitor the remaining time on a 16×2 LCD display. When the countdown reaches zero, an audible alarm is generated through a passive buzzer using PWM. The project also includes an emergency stop feature implemented with an external interrupt, which immediately stops the countdown and activates a warning siren.
 
-In addition to the standard timer functionality, the system plays the Pirates of the Caribbean melody when the countdown is completed. The project was successfully tested in both Proteus simulation and real hardware implementation.
+In addition to the standard timer functionality, the system plays the *Pirates of the Caribbean* melody when the countdown is completed. The project was successfully tested in both Proteus simulation and real hardware implementation.
 
 ---
 
@@ -71,17 +71,17 @@ In addition to the standard timer functionality, the system plays the Pirates of
 ### Sude Filiz Diren
 
 * LCD interface implementation
-* Keypad scanning functions
+* Keypad scanning implementation
 * Timer1 countdown logic
-* Countdown display management
+* Main program flow and user interface
 * Software testing and debugging
 
 ### Emre Ekici
 
-* Proteus simulation design
 * PWM sound generation
 * Pirates of the Caribbean melody implementation
 * Emergency stop interrupt implementation
+* Proteus simulation design
 * Hardware assembly and testing
 * Documentation and reporting
 
@@ -107,10 +107,15 @@ PIC16F877A-Event-Timer/
 │
 ├── README.md
 ├── Source_Code/
+│   └── main.c
+│
 ├── Proteus_Files/
-├── HEX_File/
+│
 ├── Report/
+│   └── Final_Report.pdf
+│
 ├── Images/
+│
 └── Documentation/
 ```
 
@@ -134,7 +139,7 @@ PIC16F877A-Event-Timer/
 
 The following materials were submitted separately through Microsoft Teams:
 
-* Source code files (.c and .h)
+* Source code files
 * Proteus simulation files
 * Project report
 * Project photographs
